@@ -17,6 +17,7 @@
     "forceConsistentCasingInFileNames": true,
     "noFallthroughCasesInSwitch": true,
     "module": "commonjs",
+    "moduleResolution": "node",
     "isolatedModules": true,
     "experimentalDecorators": true,
     "baseUrl": ".",

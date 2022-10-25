@@ -1,12 +1,5 @@
 node_modules
-*.log
+build
 .env
 build
 coverage
-
-.idea
-*.iml
-
-.DS_Store
-
-.vscode

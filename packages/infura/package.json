@@ -1,0 +1,12 @@
+{
+  "name": "infura",
+  "version": "1.0.0",
+  "description": "",
+  "main": "infura.ts",
+  "scripts": {
+    "build": "tsc --incremental"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
