@@ -14,6 +14,24 @@ importers:
       tslib: 2.4.0
       typescript: 4.8.4
 
+  cli:
+    specifiers: {}
+
+  core:
+    specifiers: {}
+
+  packages/env:
+    specifiers: {}
+
+  packages/etherscan:
+    specifiers: {}
+
+  packages/infura:
+    specifiers: {}
+
+  packages/rate-limiter:
+    specifiers: {}
+
 packages:
 
   /@types/node/18.11.5:
