@@ -1,3 +1,5 @@
-export async function getEtherBalance(address: string): Promise<number> {
-  return 17;
+export class Infura {
+  async getEtherBalance(address: string): Promise<number> {
+    return 11;
+  }
 }

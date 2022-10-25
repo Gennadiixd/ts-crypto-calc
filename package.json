@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start:cli": "node build/cli/index.js",
+    "start:cli:etherscan": "node build/cli/index.js etherscan",
+    "start:cli:infura": "node build/cli/index.js infura",
     "build": "pnpm --stream -r run build"
   },
   "keywords": [],

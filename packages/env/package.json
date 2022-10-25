@@ -2,7 +2,7 @@
   "name": "env",
   "version": "1.0.0",
   "description": "",
-  "main": "env.ts",
+  "main": "index.ts",
   "scripts": {
     "build": "tsc --incremental"
   },

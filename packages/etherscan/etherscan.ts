@@ -4,7 +4,7 @@ export type EtherScanApiResponse = {
   result: string;
 };
 
-export class EtherscanProvider {
+export class Etherscan {
   constructor(private readonly API_KEY: string) {}
 
   async getEtherFromAPI(address: string): Promise<EtherScanApiResponse> {

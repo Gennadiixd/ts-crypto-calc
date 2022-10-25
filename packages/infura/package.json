@@ -2,7 +2,7 @@
   "name": "infura",
   "version": "1.0.0",
   "description": "",
-  "main": "infura.ts",
+  "main": "index.ts",
   "scripts": {
     "build": "tsc --incremental"
   },

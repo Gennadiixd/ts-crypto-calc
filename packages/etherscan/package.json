@@ -2,7 +2,7 @@
   "name": "etherscan",
   "version": "1.0.0",
   "description": "",
-  "main": "etherscan.ts",
+  "main": "index.ts",
   "scripts": {
     "build": "tsc --incremental"
   },
