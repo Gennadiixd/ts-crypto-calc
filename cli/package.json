@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.ts",
+  "dependencies": {
+    "@ts-crypto-calc/env": "workspace:*"
+  },
   "scripts": {
     "build": "tsc --incremental"
   },

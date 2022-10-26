@@ -1,5 +1,5 @@
 import dotenv from "dotenv";
-import { Env } from "../packages/env";
+import { Env } from "@ts-crypto-calc/env";
 
 dotenv.config();
 

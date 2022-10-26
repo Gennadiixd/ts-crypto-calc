@@ -1,5 +1,5 @@
 {
-  "name": "env",
+  "name": "@ts-crypto-calc/env",
   "version": "1.0.0",
   "description": "",
   "main": "index.ts",

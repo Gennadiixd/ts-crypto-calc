@@ -15,10 +15,10 @@ importers:
       typescript: 4.8.4
 
   cli:
-    specifiers: {}
-
-  core:
-    specifiers: {}
+    specifiers:
+      '@ts-crypto-calc/env': workspace:*
+    dependencies:
+      '@ts-crypto-calc/env': link:../packages/env
 
   packages/env:
     specifiers: {}
