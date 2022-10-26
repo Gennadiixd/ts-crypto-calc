@@ -9,9 +9,11 @@ const providersMap = {
   INFURA: Infura,
 };
 
-const providerApiKey: `${Config["provider"]}_API_KEY` = `${config.provider}_API_KEY`;
+const providerApiKeyName: `${Config["provider"]}_API_KEY` = `${config.provider}_API_KEY`;
+const apiKey = config[providerApiKeyName];
+
 const BalanceProvider = providersMap[config.provider];
-const balanceProvider = new BalanceProvider(providerApiKey);
+const balanceProvider = new BalanceProvider(apiKey);
 
 getBalancesSum(wallets, balanceProvider).then((sum) => {
   console.log("🚀 ~ file: index.ts ~ line 11 ~ getBalancesSum ~ sum", sum);
