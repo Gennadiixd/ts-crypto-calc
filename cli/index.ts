@@ -1,15 +1,17 @@
 import { getBalancesSum } from "@ts-crypto-calc/core";
 import { Etherscan } from "@ts-crypto-calc/etherscan";
 import { Infura } from "@ts-crypto-calc/infura";
-import { config } from "./config";
+import { config, Config } from "./config";
 import wallets from "./wallets.json";
 
 const providersMap = {
-  etherscan: new Etherscan(config.ETHERSCAN_API_KEY),
-  infura: new Infura(),
+  ETHERSCAN: Etherscan,
+  INFURA: Infura,
 };
 
-const balanceProvider = providersMap[config.provider];
+const providerApiKey: `${Config["provider"]}_API_KEY` = `${config.provider}_API_KEY`;
+const BalanceProvider = providersMap[config.provider];
+const balanceProvider = new BalanceProvider(providerApiKey);
 
 getBalancesSum(wallets, balanceProvider).then((sum) => {
   console.log("🚀 ~ file: index.ts ~ line 11 ~ getBalancesSum ~ sum", sum);

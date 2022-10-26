@@ -6,7 +6,7 @@ dotenv.config();
 
 export type Config = {
   ETHERSCAN_API_KEY: string;
-  provider: "infura" | "etherscan";
+  provider: "INFURA" | "ETHERSCAN";
 };
 
 const getEnvOrThrowLogs = Env.getEnvOrThrow(console.error);

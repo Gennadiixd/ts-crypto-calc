@@ -4,10 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start:cli:etherscan": "node build.js etherscan",
-    "start:cli:infura": "node build.js infura",
-    "dev:cli:etherscan": "tsx watch cli/index.ts etherscan",
-    "dev:cli:infura": "tsx watch cli/index.ts infura",
+    "start:cli:etherscan": "node build.js ETHERSCAN",
+    "start:cli:infura": "node build.js INFURA",
+    "dev:cli:etherscan": "tsx watch cli/index.ts ETHERSCAN",
+    "dev:cli:infura": "tsx watch cli/index.ts INFURA",
     "build": "tsc --noEmit && esbuild cli/index.ts --bundle --platform=node --target=node18.11 --outfile=build.js"
   },
   "keywords": [],

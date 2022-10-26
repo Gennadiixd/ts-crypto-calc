@@ -2,7 +2,7 @@ export type BalanceProvider = {
   getEtherBalance: (address: string) => Promise<number>;
 };
 
-const ALL_BALANCE_PROVIDER_NAMES = ['infura', 'etherscan'] as const;
+const ALL_BALANCE_PROVIDER_NAMES = ['INFURA', 'ETHERSCAN'] as const;
 type BalanceProviderNameTuple = typeof ALL_BALANCE_PROVIDER_NAMES;
 export type BalanceProviderName = BalanceProviderNameTuple[number];
 
