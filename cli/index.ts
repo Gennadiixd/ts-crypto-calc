@@ -1,6 +1,6 @@
-import { getBalancesSum, BalanceProvider } from "../core";
-import { Etherscan } from "../packages/etherscan";
-import { Infura } from "../packages/infura";
+import { getBalancesSum, BalanceProvider } from "@ts-crypto-calc/core";
+import { Etherscan } from "@ts-crypto-calc/etherscan";
+import { Infura } from "@ts-crypto-calc/infura";
 import { config } from "./config";
 import wallets from "./wallets.json";
 

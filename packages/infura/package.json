@@ -1,5 +1,5 @@
 {
-  "name": "infura",
+  "name": "@ts-crypto-calc/infura",
   "version": "1.0.0",
   "description": "",
   "main": "index.ts",

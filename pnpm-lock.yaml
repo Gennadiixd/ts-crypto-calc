@@ -20,9 +20,18 @@ importers:
 
   cli:
     specifiers:
+      '@ts-crypto-calc/core': workspace:*
       '@ts-crypto-calc/env': workspace:*
+      '@ts-crypto-calc/etherscan': workspace:*
+      '@ts-crypto-calc/infura': workspace:*
     dependencies:
+      '@ts-crypto-calc/core': link:../core
       '@ts-crypto-calc/env': link:../packages/env
+      '@ts-crypto-calc/etherscan': link:../packages/etherscan
+      '@ts-crypto-calc/infura': link:../packages/infura
+
+  core:
+    specifiers: {}
 
   packages/env:
     specifiers: {}

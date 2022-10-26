@@ -4,7 +4,10 @@
   "description": "",
   "main": "index.ts",
   "dependencies": {
-    "@ts-crypto-calc/env": "workspace:*"
+    "@ts-crypto-calc/env": "workspace:*",
+    "@ts-crypto-calc/core": "workspace:*",
+    "@ts-crypto-calc/etherscan": "workspace:*",
+    "@ts-crypto-calc/infura": "workspace:*"
   },
   "scripts": {
     "build": "tsc --incremental"
