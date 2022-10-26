@@ -4,9 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start:cli:etherscan": "node build/cli/index.js etherscan",
-    "start:cli:infura": "node build/cli/index.js infura",
-    "build": "pnpm --stream -r run build"
+    "start:cli:etherscan": "node build.js etherscan",
+    "start:cli:infura": "node build.js infura",
+    "dev:cli:etherscan": "tsx watch cli/index.ts etherscan",
+    "dev:cli:infura": "tsx watch cli/index.ts infura",
+    "build": "tsc --noEmit && esbuild cli/index.ts --bundle --platform=node --target=node18.11 --outfile=build.js"
   },
   "keywords": [],
   "author": "",
@@ -14,7 +16,9 @@
   "dependencies": {
     "@types/node": "^18.11.5",
     "dotenv": "^16.0.3",
+    "esbuild": "^0.15.12",
     "tslib": "^2.4.0",
+    "tsx": "^3.11.0",
     "typescript": "^4.8.4"
   }
 }
