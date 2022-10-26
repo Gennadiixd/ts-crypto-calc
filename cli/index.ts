@@ -1,10 +1,10 @@
-import { getBalancesSum, BalanceProvider } from "@ts-crypto-calc/core";
+import { getBalancesSum } from "@ts-crypto-calc/core";
 import { Etherscan } from "@ts-crypto-calc/etherscan";
 import { Infura } from "@ts-crypto-calc/infura";
 import { config } from "./config";
 import wallets from "./wallets.json";
 
-const providersMap: { [k: string]: BalanceProvider } = {
+const providersMap = {
   etherscan: new Etherscan(config.ETHERSCAN_API_KEY),
   infura: new Infura(),
 };

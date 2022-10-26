@@ -1,16 +1,17 @@
-import dotenv from "dotenv";
+import { BalanceProviderName } from "@ts-crypto-calc/core";
 import { Env } from "@ts-crypto-calc/env";
+import dotenv from "dotenv";
 
 dotenv.config();
 
 export type Config = {
   ETHERSCAN_API_KEY: string;
-  provider: string;
+  provider: "infura" | "etherscan";
 };
 
 const getEnvOrThrowLogs = Env.getEnvOrThrow(console.error);
 
 export const config: Config = {
   ETHERSCAN_API_KEY: getEnvOrThrowLogs("ETHERSCAN_API_KEY"),
-  provider: process.argv[2],
+  provider: BalanceProviderName.ofString(process.argv[2]),
 };

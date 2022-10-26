@@ -1,4 +1,5 @@
-import { BalanceProvider, Wallet } from "../domain/wallet";
+import { BalanceProvider } from "../domain/balance-provider";
+import { Wallet } from "../domain/wallet";
 
 export const getBalancesSum = async (
   addresses: string[],
