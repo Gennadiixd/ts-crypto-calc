@@ -1,8 +1,5 @@
 import { Env } from "@ts-crypto-calc/env";
-import dotenv from "dotenv";
 import { BalanceProviderName } from "./balance-provider-name";
-
-dotenv.config();
 
 export type Config = {
   ETHERSCAN_API_KEY: string;
