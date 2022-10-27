@@ -1,7 +1,8 @@
 import { getBalancesSum } from "@ts-crypto-calc/core";
 import { Etherscan } from "@ts-crypto-calc/etherscan";
 import { Infura } from "@ts-crypto-calc/infura";
-import { config, Config } from "./config";
+import { BalanceProviderName } from "./balance-provider-name";
+import { config } from "./config";
 import wallets from "./wallets.json";
 
 const providersMap = {
@@ -9,7 +10,7 @@ const providersMap = {
   INFURA: Infura,
 };
 
-const providerApiKeyName: `${Config["provider"]}_API_KEY` = `${config.provider}_API_KEY`;
+const providerApiKeyName: `${BalanceProviderName}_API_KEY` = `${config.provider}_API_KEY`;
 const apiKey = config[providerApiKeyName];
 
 const BalanceProvider = providersMap[config.provider];
