@@ -8,16 +8,19 @@
     "start:cli:infura": "node build.js INFURA",
     "dev:cli:etherscan": "tsx watch cli/index.ts ETHERSCAN",
     "dev:cli:infura": "tsx watch cli/index.ts INFURA",
-    "build": "tsc --noEmit && esbuild cli/index.ts --bundle --platform=node --target=node18.11 --outfile=build.js"
+    "build": "tsc --noEmit && esbuild cli/index.ts --bundle --platform=node --target=node18.11 --outfile=build.js",
+    "type-check": "tsc"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@types/node": "^18.11.5",
     "dotenv": "^16.0.3",
+    "tslib": "^2.4.0"
+  },
+  "devDependencies": {
+    "@types/node": "^18.11.5",
     "esbuild": "^0.15.12",
-    "tslib": "^2.4.0",
     "tsx": "^3.11.0",
     "typescript": "^4.8.4"
   }
