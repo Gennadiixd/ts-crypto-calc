@@ -1,0 +1,9 @@
+{
+  "name": "@ts-crypto-calc/etherscan",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.ts",
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

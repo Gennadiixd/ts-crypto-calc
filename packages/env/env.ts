@@ -1,3 +1,7 @@
+import dotenv from "dotenv";
+
+dotenv.config();
+
 export type getEnvOrThrow = ReturnType<typeof getEnvOrThrow>;
 
 export const getEnvOrThrow =

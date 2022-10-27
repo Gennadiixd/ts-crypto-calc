@@ -1,0 +1,15 @@
+{
+  "name": "@ts-crypto-calc/cli",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.ts",
+  "dependencies": {
+    "@ts-crypto-calc/env": "workspace:*",
+    "@ts-crypto-calc/core": "workspace:*",
+    "@ts-crypto-calc/etherscan": "workspace:*",
+    "@ts-crypto-calc/infura": "workspace:*"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

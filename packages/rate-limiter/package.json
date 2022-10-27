@@ -1,0 +1,9 @@
+{
+  "name": "rate-limiter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "rate-limiter.ts",
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
